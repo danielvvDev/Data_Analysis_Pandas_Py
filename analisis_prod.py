@@ -18,7 +18,8 @@ if __name__ == "__main__":
     #Cambia el nombre a las columnas para hacer mÃ¡s entendible el DataFrame
     lista1 = lista1.rename(columns = {'indice_planta':'planta','producto1':'producto', 'cajas_prod1': 'cajas','lbs_prod1': 'lbs', 'vel_producto1': 'velocidad', 'tprod1': 'tipo', 'resto1':'resto' })
     lista1[['cajas','velocidad','lbs']] = lista1[['cajas','velocidad','lbs']].apply(pd.to_numeric)
-
+    
+    #imprime el dataFrame para verificar que se importo correctamente
     print('lista 1',lista1)
     print('datos concatenados')
     input()
