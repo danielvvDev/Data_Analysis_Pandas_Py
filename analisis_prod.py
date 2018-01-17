@@ -9,7 +9,7 @@ def read_data_prod():
     prod.apply(lambda x: pd.api.types.infer_dtype(x.values))
     return prod
 
-if __name__ == "__main__":
+if __name__ == "__main__": # función donde se lee el archivo principal CSV
     leer = read_data_prod() # Lee los datos del archivo datos_produccion.csv y los guarda en la variable leer
     
     #crea el DataFrame con los campos seleccionados del archivo CSV
