@@ -4,12 +4,12 @@ import sys
 import pandas as pd
 import numpy as np
 
-def read_data_prod():
+def read_data_prod():# función donde se lee el archivo principal CSV
     prod = pd.read_csv('datos_produccion.csv', index_col = 0, encoding = 'utf-8')
     prod.apply(lambda x: pd.api.types.infer_dtype(x.values))
     return prod
 
-if __name__ == "__main__": # función donde se lee el archivo principal CSV
+if __name__ == "__main__": 
     leer = read_data_prod() # Lee los datos del archivo datos_produccion.csv y los guarda en la variable leer
     
     #crea el DataFrame con los campos seleccionados del archivo CSV
