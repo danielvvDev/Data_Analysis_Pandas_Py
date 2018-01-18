@@ -109,4 +109,5 @@ if __name__ == "__main__":
     ui.setupUi(widgetfecha)
     widgetfecha.show()
     sys.exit(app.exec_())
- 
+ #esto es una prueba
+
